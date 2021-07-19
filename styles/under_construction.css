@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
 h1,
 h2,
 h3,
@@ -20,9 +14,15 @@ h6 {
     letter-spacing: 0.6px
 }
 
-.container {
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
     background: url("../images/search_results_background.jpg");
     background-size: cover;
+}
+
+.container {
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -47,22 +47,13 @@ p:nth-child(2) {
 
 p:nth-child(3) {
     color: rgb(214, 216, 218);
-    font-size: 25px;
-}
-
-p:nth-child(3)>a {
-    text-decoration: none;
-    color: rgb(214, 216, 218);
-    font-size: 20px;
-    margin: 20px;
-}
-
-p:nth-child(3)>a:hover {
-    color: rgb(248, 130, 130);
+    font-size: 18px;
+    width: 40%;
+    text-align: center;
 }
 
 .form {
-    margin-top: 10vh;
+    margin-top: 3vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -77,10 +68,10 @@ p:nth-child(3)>a:hover {
 }
 
 input {
-    background: rgb(233, 222, 222);
+    background: rgb(214, 209, 209);
     color: black;
     height: 60px;
-    width: 60vw;
+    width: 30vw;
     border-radius: 50px;
     outline: none;
     border: none;
@@ -118,9 +109,15 @@ input[type="submit"]:hover {
     background-color: rgb(36, 35, 35);
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 860px) {
+    .container {
+        margin-top: 60vh;
+    }
     p:nth-child(2) {
-        font-size: 35px;
+        font-size: 30px;
+    }
+    input {
+        min-width: 200px;
     }
     .diamonds {
         display: none;
@@ -128,20 +125,7 @@ input[type="submit"]:hover {
     .form>form {
         flex-direction: column;
     }
-    p:nth-child(3) {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .arrow {
-        margin-top: 13px;
-    }
     input[type="submit"] {
-        width: 150px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    p:nth-child(2) {
-        font-size: 25px;
+        width: 170px;
     }
 }

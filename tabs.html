@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="styles/tabs.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <div class="containerh">
+        <p>Choose Your Style</p>
+        <p><span class="diamonds">&#9830;&nbsp;</span>Tabs <span class="diamonds">&#9830;&nbsp;</span></p>
+        <p><a href="#">Home</a><span class="arrow">&#8594;</span><a href="#">Pages</a><span
+                class="arrow">&#8594;</span><a href="#">Search Results</a></p>
+    </div>
+    <div class="w3-container">
+        <h2>Tabs</h2>
+        <!-- <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects.
+            Click on the links below.</p> -->
+    </div>
+
+    <div class="w3-bar w3-white standard-tabs">
+        <button class="w3-bar-item w3-button" onclick="openCity('Overview')">Overview</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Founder')">Founder</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Mission')">Mission</button>
+    </div>
+
+    <div id="Overview" class="w3-container tab-1 active">
+        <h2>Overview</h2>
+        <span>london</span>
+        <!-- <p>London is the capital city of England.</p> -->
+    </div>
+
+    <div id="Founder" class="w3-container tab-1" >
+        <h2>Founder</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="Mission" class="w3-container tab-1" s>
+        <h2>Mission</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <script src="scripts/tabs.js"></script>
+</body>
