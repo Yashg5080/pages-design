@@ -50,6 +50,10 @@ input {
     padding-left: 30px;
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
 ::placeholder {
     color: rgb(246, 248, 250);
     padding-left: 10px;
